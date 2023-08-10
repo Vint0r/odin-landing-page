@@ -78,15 +78,18 @@ header h1 {
     margin: 0px;
 }
 
-header .signup-button {
-    background-color: #3882F6;
-    color: #F9FAF8;
+.signup-button {
     width: 100px;
     height: 32px;
     border-radius: 6px;
     border-style: none;
+    font-weight: 600;
+}
+
+header .signup-button {
+    background-color: #3882F6;
+    color: #F9FAF8;
     margin-top: auto;
-    
 }
 
 .header-right {
@@ -157,6 +160,7 @@ section {
     text-align: center;
     padding: 0px;
     margin: 0;
+    margin-top: 5px;
 }
 
 .secondary {
@@ -191,6 +195,53 @@ section {
     padding-right: 10px;
 }
 
-footer {
+.signup-wrapper {
+    background-color: #F9FAF8;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.signup-container {
+    width: 1100px;
+    height: 140px;
+    background-color: #3882F6;
+    color: #F9FAF8;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-content {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.signup-left h3, .signup-left p{
+    margin: 0;
+}
+
+.signup-content button{
+    background-color: #3882F6;
+    border: 1px solid #F9FAF8;
+    color: #F9FAF8;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container {
+    margin: 20px 0px;
+}
+
+.footer-container p {
+    color: #E5E7EB;
+    font-size: 18px;
 }

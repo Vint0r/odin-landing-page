@@ -1,26 +1,11 @@
 * {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    /* border: 1px solid red; */
 }
 
-a:link { 
+a, a:link, a:visited, a:hover, a:active { 
     text-decoration: none; 
-}
-
-a:visited { 
-    text-decoration: none; 
-}
-
-a:hover { 
-    text-decoration: none; 
-}
-
-a:active { 
-    text-decoration: none; 
-}
-
-a {
-    text-decoration: none;
 }
 
 body {
@@ -39,8 +24,8 @@ footer {
 
 .header-container {
     margin-top: 10px;
-    width: 1200px;
-    max-width: 100%;
+    width: 1100px;
+   
 }
 
 nav {
@@ -65,46 +50,56 @@ nav {
 
 .header-content {
     display: flex;
-    margin-top: 60px;
+    align-content: flex-start;
+    margin-top: 90px;
     margin-bottom: 60px;
-    flex: 1 1 0;
+    
 }
 
 .header-left {
+    flex: 1 1 0;
     display: flex;
     flex-direction: column;
-    flex: 1 1 auto;
-}
-
-.header-left p {
-    font-size: 18px;
-    color: #E5E7EB;
-}
-
-.header-right {
-    min-width: 0;
-}
-
-.header-image {
-    width: 100%;
-    height: auto;
+    justify-content: flex-start;
 }
 
 header h1 {
     color: #F9FAF8;
     font-size: 48px;
     font-weight: 900;
+    padding: 0;
+    margin: 0;
+}
+
+.header-left p {
+    font-size: 18px;
+    color: #E5E7EB;
+    padding-right: 25px;
+   
 }
 
 header .signup-button {
     background-color: #3882F6;
     color: #F9FAF8;
-    max-width: 90px;
+    width: 80px;
     height: 24px;
     border-radius: 6px;
     border-style: none;
     margin-top: auto;
+    
 }
+
+.header-right {
+    flex: 1 1 0;
+}
+
+.header-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
 
 footer .signup-button {
 
